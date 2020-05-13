@@ -53,11 +53,11 @@ function substring(string: string, attribute: string) {
 }
 
 
-function stringReverse(stringR : string, attribute: string) {
+function stringReverse(stringR : string, attribute: string) {        //parametervariablnnamen sollen mit "_" beginnen
     if (attribute == "whitespace") {
         let stringArray:string[] = stringR.split(" ");
         stringArray = stringArray.reverse();
-        stringR = stringArray.join(" ");
+        stringR = stringArray.join(" ");                            //string (allgemein datantypen) als präfix vermeiden, lieber beschreibendere namen aussuchen
         return stringR;
     }
     else {
